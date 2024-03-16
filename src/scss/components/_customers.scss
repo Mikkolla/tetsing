@@ -1,0 +1,86 @@
+.cust {
+
+    @include desktop-small{
+        padding: 20px;
+    }
+
+    &__title {
+    }
+
+    &__img {
+        width: 326px;
+    height: 341px;
+
+
+    @include tablet-small{
+        width: 220px;
+        height: 200px;
+    }
+        
+}
+
+    &__main {
+    }
+
+    &__desc {
+        color: var(--p-color);
+        font-family: var(--ff-second);
+font-size: 24px;
+font-weight: 400;
+line-height: 160%;
+letter-spacing: 0%;
+text-align: left;
+max-width: 524px;
+        @include tablet{
+            max-width: 500px;
+
+            
+        }
+
+        @include tablet-small{
+            max-width: 400px;
+
+            
+        }
+
+        @include mobile{
+            max-width: 300px;
+        }
+
+    }
+
+    &__about {
+        
+    }
+
+    &__name {
+        color:var(--f-grey);
+font-family: var(--ff-second);
+font-size: 24px;
+font-weight: 600;
+line-height: 160%;
+letter-spacing: 0%;
+text-align: left;
+    }
+
+    &__job {
+        color: rgb(134, 134, 134);
+font-family: var(--ff-second);
+font-size: 18px;
+font-weight: 500;
+line-height: 160%;
+letter-spacing: 8%;
+text-align: left;
+    }
+}
+.item {
+    display: flex;
+    align-items:flex-start ;
+    
+    gap: 56px;
+    
+   @include tablet-small{
+    flex-direction: column;
+   }
+    
+}

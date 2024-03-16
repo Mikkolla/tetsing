@@ -1,0 +1,121 @@
+.store {
+    padding-top: 100px;
+    
+    margin: 0 auto;
+		&__title {
+            font-family: var(--ff);
+font-size: 44px;
+font-weight: 600;
+line-height: 53px;
+letter-spacing: 0%;
+text-align: center;
+
+@include tablet-small{
+        text-align: left;
+}
+		}
+
+		&__text {
+            display: flex;
+            justify-content: space-between;
+
+            @include desktop-small{
+                padding: 0px 20px ; 
+            }
+            @include mobile{
+                flex-direction: column;
+            }
+		}
+
+		&__new {
+            color: rgb(18, 18, 18);
+font-family: var(--ff-second);
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 8%;
+text-align: left;
+
+@include mobile{
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+		}
+
+		&__view {
+            color: rgb(134, 134, 134);
+font-family: var(--ff-second);
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: left;
+&:hover{
+    transition: var(--transition);
+    text-decoration: underline;
+}
+@include mobile{
+    padding-top: 20px;
+    font-size: 15px;
+    
+}
+		}
+
+		&__main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 54px;
+
+            @include desktop-small{
+                padding: 0px 20px ; 
+            }
+
+            @include tablet-small{
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+            }
+
+            @include mobile{
+                grid-template-columns: 1fr;
+            }
+
+
+		}
+
+		&__article {
+		}
+
+		&__img {
+		}
+
+		&__name {
+            color: rgb(18, 18, 18);
+            font-family: var(--ff-second);
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left;
+&:hover{
+    text-decoration: underline;
+}
+		}
+
+		&__price {
+            color: rgb(102, 102, 102);
+            font-family: var(--ff-second);
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0%;
+text-align: left;
+            
+		}
+}
+
+.container{
+    
+}

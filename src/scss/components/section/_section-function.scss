@@ -1,0 +1,133 @@
+.function {
+  background-color: #293241;
+  
+  margin-bottom: 100px;
+  
+
+
+  &__text {
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 200px;
+    gap: 50px;
+
+    @include tablet{
+      display: flex;
+      flex-direction: column;
+      padding-left: 30px;
+    }
+  }
+
+  &__wow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 478px;
+    @include desktop-small{
+      padding-right: 20px;
+    }
+
+    @include tablet-small{
+      padding-top: 40px;
+      margin-top: 40px;
+    }
+
+    
+    
+  }
+
+  &__title {
+    color: var(--White, #FFF);
+font-family: Open Sans;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; 
+position: relative;
+
+&::before {   position: absolute;   content: "";
+  z-index: -1;   flex-shrink: 0;
+ left: 0%;   top: 100.4%;
+  width: 478px;   background: #ee6c4d;   height: 3px;   z-index: 1; }
+
+
+  @include desktop-small{
+    &::before {   position: absolute;   content: "";
+      z-index: -1;   flex-shrink: 0;
+     left: 0%;   top: 100.4%;
+      width: 350px;   background: #ee6c4d;   height: 3px;   z-index: 1; }
+      
+  }
+
+  @include mobile{
+    &::before {   position: absolute;   content: "";
+      z-index: -1;   flex-shrink: 0;
+     left: 0%;   top: 100.4%;
+      width: 300px;   background: #ee6c4d;   height: 3px;   z-index: 1; }
+      
+  }
+
+  }
+
+  &__pagem {
+    color: var(--White, #FFF);
+font-family: var(--ff);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 23.4px */
+  }
+
+  &__pagei {
+    color: var(--White, #FFF);
+font-family: var(--ff);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 23.4px */
+  }
+
+  &__pagea {
+    color: var(--White, #FFF);
+font-family: var(--ff);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 23.4px */
+  }
+}
+.container {
+}
+.imgafsas {
+  padding-right: 200px;
+  width: 100%;
+  @include desktop-small{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include tablet{
+    padding-left: 200px;
+  }
+
+  @include tablet-small{
+    padding-left: 100px;
+  }
+  @include mobile{
+    padding-left: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

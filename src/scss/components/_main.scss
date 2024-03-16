@@ -1,0 +1,122 @@
+.main { 
+    display: flex;
+    align-items: end;
+
+    @include tablet{
+        justify-content: flex-start;
+        
+    }
+    
+   
+    &__title {
+        max-width: 469px; 
+        margin-top: 80px;
+    font-family: Cal Sans;
+font-size: 56px;
+font-weight: 600;
+line-height: 67px;
+letter-spacing: 0%;
+text-align: left;
+        @include desktop-small{
+            margin-top: 20px;
+        }
+
+        @include tablet{
+            font-size: 50px;
+            
+        }
+
+        @include mobile{
+            max-width: 380px;
+        }
+
+    }
+
+    &__desc {
+        max-width: 398px;
+        color: var(--p-color);
+font-family: var(--ff-second);
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left;
+        @include tablet{
+            max-width: 320px;
+        }
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        
+    }
+
+    &__app{
+        border-radius: 40px;
+        padding: 18px 48px;
+background: rgb(255, 100, 40);
+
+color: var(--c-text-white);
+font-family: var(--ff-second);
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase;
+text-decoration: none;
+display: inline-block;
+transition: all 0.4s ease 0s;
+
+        &:hover{
+            text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+        }
+
+}
+
+    &__apps{
+        display: flex;
+        align-items: center;
+        gap: 27px;
+    }
+
+
+    &__img {
+        
+
+        @include tablet{
+            display: none;
+        }
+    }
+
+    &__img2{
+
+        display: none;
+        @include tablet{
+            display: none;
+          
+        }
+        
+ 
+    }
+}
+
+.test{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 586px;
+    width: 672px;
+
+    @include desktop-small{
+        
+        width: 463px;
+        height: 450px;
+    
+    }
+}

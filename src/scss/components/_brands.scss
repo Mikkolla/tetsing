@@ -1,0 +1,69 @@
+.brands {
+    padding-top: 100px;
+    &__title {
+        font-family:var(--ff);
+font-size: 44px;
+font-weight: 600;
+line-height: 53px;
+letter-spacing: 0%;
+text-align: center;
+        @include tablet{
+            padding: 20px;
+        }
+
+        @include tablet-small{
+            padding: 40px;
+            text-align: left;
+            max-width: 300px;
+        }
+
+        @include mobile{
+            
+            padding: 0px;
+            
+        }
+
+    }
+
+    &__main {
+        padding-top: 75px;
+        display: grid;
+        align-items: center;
+
+        row-gap: 110px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 170px;
+        @include desktop-small{
+            padding: 20px;
+        }
+
+        @include tablet{
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+
+        @include tablet-small{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__img{
+        width: 150px;
+
+        &:hover{
+          
+           
+            
+           
+            
+        }
+        
+    }
+
+
+}
+.span {
+}
+
